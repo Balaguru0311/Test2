@@ -25,6 +25,7 @@
         </div>
         <div>
             <button id="get">Click here</button>
+            <button class="clickfun" id="click">Click Here</button>
         </div>
     </section>
     <footer>
@@ -34,6 +35,12 @@
         var button = document.getElementById("get");
         button.onclick = function (){
             alert("You clicked me")
+        }
+        var button2 = document.getElementsByClassName("clickfun");
+        button2[0].style.backgroundColor = "red";
+        var button21 = document.getElementById("click");
+        button21.onclick = function(){
+            console.log("You clicked me");
         }
     </script>
 </body>
